@@ -18,7 +18,7 @@ const About = () =>{
                         <h4>EXPERTISE</h4>
 
                         <p>Fullstack developer with primary focus on Java, Flutter and React: 
-                        <a target={'_blank'} rel="noopener noreferrer" href={require('./equipo-obligatorio.pdf')}> Download Resume</a></p>
+                        <a target={'_blank'} rel="noopener noreferrer" href={require('./cv-santiago-chantada.pdf')}> Download Resume</a></p>
                         
                         <div id='skills'>
                             <ul>
