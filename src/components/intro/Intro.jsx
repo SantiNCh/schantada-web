@@ -12,31 +12,23 @@ const Intro = () => {
     }
     const changeColor = (e) =>{
         console.log('Entro')
-        let themeDots = document.getElementsByClassName('theme-dot');
-        for (var i=0; themeDots.length > i; i++){
-            themeDots[i].addEventListener('click', function(){
-                let mode = this.dataset.mode;
-                setTheme(mode, file);
-           });
-        }
-
-        
+        setTheme(e.target.id, file);
     }
 
     function setTheme(mode, file){
-        if(mode === 'light'){
+        if(mode.includes('light')){
             file.href = 'default.css';
         }
 
-        if(mode === 'blue'){
+        if(mode.includes('blue')){
             file.href = 'blue.css';
         }
 
-        if(mode === 'green'){
+        if(mode.includes('green')){
             file.href = 'green.css';
         }
 
-        if(mode === 'purple'){
+        if(mode.includes('purple')){
             file.href = 'purple.css';
         }
         localStorage.setItem('theme', mode)
